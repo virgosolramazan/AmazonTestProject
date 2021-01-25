@@ -32,9 +32,9 @@ public class AddCart_TC1 {
 
         home.clickLogin();
 
-        login.enterEmail("ramazankocademir@gmail.com");
+        login.enterEmail("ramazankocademir@yandex.com");
         login.clickContinue();
-        login.enterPassword("12047754594");
+        login.enterPassword("bNY7JACBg-M_Xx@");
         login.clickLogin();
 
         searchProduct.search("Redmi Note 8");
