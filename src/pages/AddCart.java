@@ -9,7 +9,7 @@ public class AddCart {
     WebDriver driver;
     public AddCart(WebDriver driver){this.driver = driver;}
 
-    By product = By.xpath("//*[@id=\"search\"]/div[1]/div[2]/div/span[3]/div[2]/div[2]/div/span/div/div/div[3]/div[2]/div/div/a/span");
+    By product = By.xpath("//*[@id=\"search\"]/div[1]/div[2]/div[1]/span[3]/div[2]/div[2]/div[1]/span[1]/div[1]/div[1]/div[2]/h2[1]/a[1]/span[1]");
     By add_cart_product = By.id("add-to-cart-button");
     By view_cart = By.id("hlb-view-cart");
     By quantity_selector = By.id("a-autoid-0");
