@@ -17,7 +17,6 @@ public class AddCart {
     By delete = By.xpath("/html/body/div[1]/div[4]/div/div[7]/div/div[2]/div[2]/div/form/div[2]/div[3]/div[4]/div/div[1]/div/div/div[2]/div[1]/span[2]/span/input");
 
     public void clickProduct(){
-        System.out.println(product);
 
         WebDriverWait wait = new WebDriverWait(driver,60);
         wait.until(ExpectedConditions.visibilityOfElementLocated(product));
@@ -36,7 +35,6 @@ public class AddCart {
         driver.findElement(quantity_select).click();
     }
     public void deleteItem(){
-        System.out.println(delete);
 
         WebDriverWait wait = new WebDriverWait(driver,60);
         wait.until(ExpectedConditions.elementToBeClickable(delete));

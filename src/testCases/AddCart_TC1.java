@@ -2,16 +2,25 @@ package testCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import pages.AddCart;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.SearchProduct;
 
 public class AddCart_TC1 {
-    public static void main(String[] args) {
+    public static WebDriver driver;
+    @BeforeTest
+    public void setUpTest(){
         String PATH = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver",PATH+"/driver/chrome/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
+    }
+
+    @Test
+    public void addCartCase(){
         driver.get("http://www.amazon.com.tr");
         driver.manage().window().maximize();
         HomePage home = new HomePage(driver);
@@ -39,6 +48,10 @@ public class AddCart_TC1 {
         addCart.quantitySelector();
         addCart.quantitySelect();
         addCart.deleteItem();
+    }
+    @AfterTest
+    public void tearDownTest() {
+        driver.close();
         driver.quit();
 
     }

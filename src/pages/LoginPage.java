@@ -13,15 +13,19 @@ public class LoginPage {
     By password_input = By.id("ap_password");
     By login_btn = By.id("signInSubmit");
 
+
     public void enterEmail(String email){
         driver.findElement(email_input).sendKeys(email);
     }
+
     public void enterPassword(String password){
         driver.findElement(password_input).sendKeys(password);
     }
+
     public void clickContinue(){
         driver.findElement(continue_btn).click();
     }
+
     public void clickLogin(){
         driver.findElement(login_btn).click();
     }

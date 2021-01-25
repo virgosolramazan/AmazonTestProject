@@ -2,6 +2,7 @@
   <library name="selenium-server-standalone-3.141.59">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/seleniumjars/selenium-server-standalone-3.141.59.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/TestNG/testng-7.3.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
